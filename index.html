@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crap-portfolio</title>
+    <title>Login | Self-Paced Learning</title>
+    <link rel="stylesheet" type="text/css" href="*/">
 </head>
 <body>
-    
+    <header>
+        <!-- Add the same header code as before with updated "Login" and "Register" links -->
+    </header>
+
+    <section class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="login_process.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="forget_password">Forget Password</label>
+            <input type="text" id="forget_password" name="forget_password">
+            <button type="submit">Login</button>
+        </form>
+        <p id="forgetPasswordMsg" style="display:none;">A new password has been sent to your email.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Self-Paced Learning</p>
+    </footer>
 </body>
 </html>
